@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             x:Class="WatchPrimitives.MainPage">
+
+    <StackLayout>
+        <Label>НАчало</Label>
+        <BoxView WidthRequest="10" BackgroundColor="Yellow" 
+                 Color="Blue" HeightRequest="20"
+                 HorizontalOptions="Center"></BoxView>
+        <Label>Конец</Label>
+    </StackLayout>
+
+</ContentPage>
