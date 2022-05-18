@@ -1,15 +1,49 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
              x:Class="WatchPrimitives.MainPage">
 
-    <StackLayout>
-        <Label>НАчало</Label>
-        <BoxView WidthRequest="10" BackgroundColor="Yellow" 
-                 Color="Blue" HeightRequest="20"
-                 HorizontalOptions="Center"></BoxView>
-        <Label>Конец</Label>
-    </StackLayout>
+    <Grid x:Name="mainGrid">
+
+        <Ellipse Stroke="#e5ecf9"
+            StrokeThickness="8"
+            HeightRequest="350"
+            WidthRequest="350"
+            VerticalOptions="Center"
+            x:Name="circumstance"
+            HorizontalOptions="Center" />
+        <Line Y1="175" X1="0"
+            X2="0" Y2="70"
+            Stroke="Black" 
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+              HeightRequest="350"
+            StrokeThickness="24"
+            x:Name="hoursHand"/>
+        <Line Y1="175" X1="0"
+            X2="0" Y2="35"
+            Stroke="Black" 
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+              HeightRequest="350"
+            StrokeThickness="20"
+            x:Name="minutesHand"/>
+        <Line Y1="225" X1="0"
+            X2="0" Y2="15"
+            Stroke="#ff2626" 
+              HeightRequest="350"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            StrokeThickness="6"
+            x:Name="secondsHand"/>
+        <Ellipse
+            Fill="Black"
+            HeightRequest="25"
+            WidthRequest="25"
+            x:Name="centralCircle"
+            VerticalOptions="Center"
+            HorizontalOptions="Center" />
+        <Label x:Name="timelable" Text="timetext"/>
+    </Grid>
 
 </ContentPage>
