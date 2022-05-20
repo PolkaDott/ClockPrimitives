@@ -24,7 +24,7 @@ namespace WatchPrimitives
             var now = DateTime.Now;
             secondsHand.Rotation = now.Second * 6;
             minutesHand.Rotation = now.Minute * 6;
-            hoursHand.Rotation = now.Hour * 15;
+            hoursHand.Rotation = now.Hour * 30;
             timelable.Text = DateTime.Now.ToString();
         }
 
